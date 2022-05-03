@@ -1,0 +1,30 @@
+/* 全局样式 */
+
+/* 初始化、格式化某些元素样式 */
+html,body,#app{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* 面包屑导航 */
+.el-breadcrumb{
+    font-size: 16px !important;
+    margin-bottom: 15px;
+}
+
+/* 分页 */
+.el-pagination{
+    margin-top: 15px;
+}
+
+/* Cascader 级联选择器 */
+.el-cascader-panel{
+    height: 400px;
+    overflow: auto;
+}
+
+/* 富文本编辑器 */
+.ql-editor{
+    height:300px !important;
+}
