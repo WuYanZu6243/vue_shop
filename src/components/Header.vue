@@ -3,7 +3,7 @@
   <div class="header-container">
     <!-- 文章的logo和标题 -->
     <div class="logo">
-      <img src="../assets/img/logo.png" alt="" />
+      <img src="https://cdn.jsdelivr.net/gh/WuYanZu6243/figureBed/imglogo.png" alt="" />
       <span>电商后台管理系统</span>
     </div>
     <!-- 退出按钮 -->

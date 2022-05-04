@@ -18,14 +18,26 @@ import treeTable from 'vue-table-with-tree-grid'
 // 全局注册使用树形导航表格插件
 Vue.component('tree-table',treeTable)
 
+// 导入进度条包对应的js和css
+import Nprogress from 'nprogress'
+import 'nprogress/nprogress.css'
+
 // 导入axios
 import axios from 'axios'
 // 配置请求根路径
 axios.defaults.baseURL = 'http://182.61.30.46:8889/api/private/v1/' 
 // 设置请求拦截器
 axios.interceptors.request.use(config=>{
+  // 展示进度条
+  Nprogress.start()
   // 为请求头对象，添加token验证的Authorization字段
   config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
+// 设置响应拦截器
+axios.interceptors.response.use(config=>{
+  // 隐藏进度条
+  Nprogress.done()
   return config
 })
 // 把axios挂到Vue原型上，让大家都能访问到

@@ -84,7 +84,7 @@ export default {
 .login-container {
   width: 100%;
   height: 100%;
-  background: url("../assets/img/background.jpg") center / 100%;
+  background: url("https://cdn.jsdelivr.net/gh/WuYanZu6243/figureBed/imgbackground.jpg") center / 100%;
   position: relative;
   // 登录框
   .login-box {
