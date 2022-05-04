@@ -17,5 +17,6 @@ module.exports = {
       }
     ],
     ...prodPlugins, // 发布阶段不要console
+    "@babel/plugin-syntax-dynamic-import"  // 路由的懒加载
   ]
 }

@@ -9,17 +9,17 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 // 导入路由组件
-import Login from '../pages/Login.vue'
-import Home from '../pages/Home.vue'
-import Users from '../pages/Users.vue'
-import Rights from '../pages/Rights.vue'
-import Roles from '../pages/Roles.vue'
-import Categories from '../pages/Categories.vue'
-import Params from '../pages/Params.vue'
-import Goods from '../pages/Goods.vue'
-import AddGoods from '../pages/AddGoods.vue'
-import Orders from '../pages/Orders.vue'
-import Report from '../pages/Report.vue'
+const Login = () => import('../pages/Login.vue')
+const Home = () => import('../pages/Home.vue')
+const Users = () => import('../pages/Users.vue')
+const Rights = () => import('../pages/Rights.vue')
+const Roles = () => import('../pages/Roles.vue')
+const Categories = () => import('../pages/Categories.vue')
+const Params = () => import('../pages/Params.vue')
+const Goods = () => import('../pages/Goods.vue')
+const AddGoods = () => import('../pages/AddGoods.vue')
+const Orders = () => import('../pages/Orders.vue')
+const Report = () => import('../pages/Report.vue')
 
 // 创建路由器
 const router = new VueRouter({
