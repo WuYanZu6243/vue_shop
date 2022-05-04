@@ -64,6 +64,8 @@ import 'quill/dist/quill.bubble.css'
 // 将富文本编辑器注册为全局可用的组件
 Vue.use(VueQuillEditor)
 
+// 简单粗暴式控制屏幕缩放
+document.body.style.zoom = document.body.clientWidth / 1600
 
 Vue.config.productionTip = false
 
