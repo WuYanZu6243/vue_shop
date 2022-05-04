@@ -1,4 +1,4 @@
-// 生成模式下不要console
+// 发布阶段不要console
 var prodPlugins = [] 
 if (process.env.NODE_ENV == 'production' ) {
 prodPlugins.push('transform-remove-console') }
@@ -16,6 +16,6 @@ module.exports = {
         "styleLibraryName": "theme-chalk"
       }
     ],
-    ...prodPlugins, // 生成模式下不要console
+    ...prodPlugins, // 发布阶段不要console
   ]
 }
